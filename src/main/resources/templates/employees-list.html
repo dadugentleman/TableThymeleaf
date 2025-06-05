@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thyumeleaf,org">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Employee Directory</title>
+</head>
+<body>
+    <h3>Employee Directory</h3>
+    <hr>
+<table border="1">
+    <thead>
+    <tr>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>email</th>
+    </tr>
+    </thead>
+
+</table>
+<tr th:each="Employees":$(employees)>
+    <td th:text="${tempEmployees.firstName}"/>
+    <td th:text="${tempEmployees.LasttName}"/>
+    <td th:text="${tempEmployees.email}"/>
+
+</tr>
+
+
+</body>
+</html>
